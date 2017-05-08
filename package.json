@@ -11,6 +11,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist trippin.surge.sh",
     "start": "ember server",
     "test": "ember test"
   },
